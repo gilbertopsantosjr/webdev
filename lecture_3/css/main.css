@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import "form.css";
+
+:root { /*	:root selector matches the documents root element */
+    --blue: #032f5b;	/* <variable-name>:<variable-value> */
+    --white: #ffffff;
+}
+    
+
+body {
+    font-family: "Cabin", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    text-shadow: 2px 2px 2px gray;
+
+}
+
+nav {
+    text-align: center;
+    margin-top: 0;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #555;
+}
+
+/*
+#this another way to select the element
+*/
+
+main {
+    padding: 20px;
+    background-image: url('../images/bg.jpeg');
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.redbox {
+    border: 5px solid red;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+table, td {
+    text-align: center;
+}
+
+
+footer p {
+    text-align: center;
+    color: var(--blue)
+}
+
+ul {
+    list-style: none;
+}
