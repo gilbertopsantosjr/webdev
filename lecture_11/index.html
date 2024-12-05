@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const txtName = document.getElementById('txtName');
+            const button = document.getElementById('clk');
+            
+            txtName.addEventListener('input', function(){
+                console.log(txtName.value);
+                if(txtName.value.length > 0){
+                    button.removeAttribute('disabled'); 
+                }    
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <form action="http://127.0.0.1:3000/submit" method="post">
+        <input value="01" type="hidden" name="userId"/>
+        
+        <label for="txtName">txtName
+            <input value="" autofocus type="text" id="txtName" required name="txtName"/>
+        </label>
+
+        <label for="txtEmail">txtEmail
+            <input value="" type="email" name="txtEmail"/>
+        </label>
+
+        <select name="gender">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+        </select>
+
+        <input type="reset" value="reset"/>
+        <button id="clk" disabled >click me</button>
+    </form>
+</body>
+</html>
