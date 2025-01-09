@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XSS</title>
+  </head>
+  <body>
+    <form id="customForm">
+      <input type="text" id="inputTxt" />
+      <button type="submit">Submit</button>
+    </form>
+    <div id="txt"></div>
+    <script>
+      document
+        .getElementById("customForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          document.getElementById("txt").textContent =
+            document.getElementById("inputTxt").value;
+        });
+    </script>
+  </body>
+</html>
