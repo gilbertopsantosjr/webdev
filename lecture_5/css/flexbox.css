@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #1b1a1a;
+    padding: 10px;
+}
+
+.box_logo {
+    color: #fff;
+    font-size: 150%;
+    text-align: center;
+    margin: 15px;
+    
+}
+
+.box_menu{
+    color: #fff;
+    margin-right: 100px;
+}
